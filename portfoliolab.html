@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" >
+    
+    
+    <style>
+        
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+
+   
+}
+
+
+
+header, nav, section, footer {
+   
+   
+    padding: 15px;
+}
+
+header{
+    background: linear-gradient(to right, #f2bc3db4, #c9429ad5);
+    border:5px solid black;
+    
+}
+#profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    float: right; /* Float the profile photo to the right */
+    margin-left: 20px;
+    border:5px solid black;
+   
+}
+
+#profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    
+}
+nav{
+  
+  top: 0px;
+  text-align: center;
+  background-color: black;
+
+  position: sticky;
+  top: 0;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    
+   
+    
+}
+
+li
+{
+    color: aquamarine;
+
+
+}
+
+.about {
+     /* Adjust colors as needed */
+     background: linear-gradient(to right, #ff952cb4, #52d2dbd5);
+    padding: 20px;
+    
+}
+
+
+.pattern-bg {
+    background:linear-gradient(to right,aquamarine,#c633cd);
+    padding: 20px;
+    border:5px solid black;
+}
+
+.image-bg {
+    
+    background-size: cover;
+    background-position: center;
+    background:linear-gradient(to right,rgb(230, 228, 117),#ea7c1cce);
+    padding: 20px;
+    
+}
+
+.solid-bg {
+    /* Adjust color as needed */
+    
+    background: linear-gradient(to right, #e73c3cb4, #8f47d3d5);
+    border:5px solid black;
+    padding: 20px;
+    position:relative;
+    z-index: -1;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #555;
+}
+
+.project {
+
+    margin-bottom: 20px;
+}
+#contact {
+    background-color:black;
+     color: aquamarine;
+    padding-bottom: 250px; /* Adjust the value as needed */
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    
+    text-align:center;
+    position:static;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+.reveal 
+{
+    position: relative;
+    opacity: 0;
+}
+
+.reveal.active 
+{
+    opacity: 1;
+}
+.active.fade-bottom 
+{
+    animation: fade-bottom 2s ;
+}
+.active.fade-left 
+{
+    animation: fade-left 3s;
+}
+.active.fade-right 
+{
+    animation: fade-right 1s ease-in;
+}
+@keyframes fade-bottom 
+{
+    0% 
+    {
+        transform: translateX(500px);
+        opacity: 0;
+    }
+    100% 
+    {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes fade-left 
+{
+    0% 
+    {
+        width: 0%;
+    }
+    100% 
+    {
+    }
+  }
+  
+@keyframes fade-right 
+{
+    0% 
+    {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% 
+    {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+a{
+    color:aquamarine;
+}
+
+@media (max-width: 992px) {
+    #header .social-links {
+        margin-top: 15px;
+    }
+}
+
+li
+{
+    color: black;
+
+
+} 
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+      
+        <div id="profile-photo"  >
+            <img src="C:\Users\janga\Desktop\html\prof.jpg" alt="Profile Photo">
+        </div>
+        <div id="header-text" >
+            <h1>J.Harshith Reddy </h1>
+            <h2>Computer Science Engineering Student</h2>
+        </div>
+    </header>
+    
+
+    
+
+    <section id="about" class="about ">
+        <h2>About Me</h2>
+        <p >I am a Computer Science Engineering student passionate about technology and programming. I enjoy working on various projects and learning new skills.</p>
+    </section>
+
+    <section id="education" class="solid-bg reveal fade-bottom">
+        <h2>Education</h2>
+
+        <p>Intermediate in M.P.C</p>
+        <p><b>Sri Chaitanya Institute of Technology,Madhapur,Hyderbad</b></p>
+        <br>
+        <p>Bachelor of Technology in<b> Computer Science Engineering</b> </p>
+        <p><b>Vellore Institute of Technology</b> , vellore, Tamilnadu,India</p>
+        <p>Year of Graduation: 2026</p>
+    </section>
+
+    <section id="projects" class="image-bg reveal fade-bottom">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Creating a Face recognition webpage</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p> Creating a Hand signaling Game controller software</p>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+
+    <section id="skills" class="pattern-bg reveal fade-bottom">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Languages: Java, Python, C,C++</li>
+            <li>Web Development: HTML, CSS, JavaScript</li>
+            
+            <!-- Add more skills as needed -->
+        </ul>
+    </section>
+    
+
+   
+    <section id="contact" class="contact reveal fade-bottom">
+
+        <h2>Contact</h2>
+        <p>Phone: <span style="color: aliceblue;">9381492043</span></p>
+        <p style="color:#fff;"><b>Links:</b></p>
+        <p>E-mail: <a style="color:lightblue;"  href="jangaharshithreddy@gmail.com">  jangaharshithreddy@gmail.com   </a><br><br>
+
+        
+         <a style="color:lightblue;" href="https://github.com/jharshith">   Github  </a><br><br>
+         <a style="color:lightblue;" href="https://www.linkedin.com/in/janga-harshith-reddy-29b822253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">    linkedin    </a></p>
+        
+        
+        
+    </section>
+
+    
+    
+
+    <footer>
+        <p>&copy; 2024 J.Harshith Reddy</p>
+    </footer>
+
+    
+    <script >
+        function reveal() 
+{
+    var reveals = document.querySelectorAll(".reveal");
+  
+    for (var i = 0; i < reveals.length; i++) 
+    {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 50;
+    
+        if (elementTop < windowHeight - elementVisible) 
+        {
+            reveals[i].classList.add("active");
+        } 
+        else
+        {
+            reveals[i].classList.remove("active");
+        }
+    }
+}
+window.addEventListener("scroll", reveal);
+    </script>
+</body>
+</html>
